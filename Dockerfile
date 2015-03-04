@@ -49,9 +49,6 @@ EXPOSE 8184
 # Set the user to run Rexster
 USER root
 
-# OrientDB database name to connect
-ENV DATABASE_NAME="main"
-
 # Default command when starting the container
 WORKDIR /opt/rexster
 CMD ["/bin/sh", "-e", "./bin/run.sh"]

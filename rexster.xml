@@ -89,9 +89,24 @@
     <graphs>
         <graph>
             <graph-enabled>true</graph-enabled>
-            <graph-name>_DATABASE_NAME_</graph-name>
+            <graph-name>test</graph-name>
             <graph-type>com.tinkerpop.rexster.OrientGraphConfiguration</graph-type>
-            <graph-location>remote:_ORIENTDB_PORT_2424_TCP_ADDR_:_ORIENTDB_PORT_2424_TCP_PORT_/_DATABASE_NAME_</graph-location>
+            <graph-location>remote:_ORIENTDB_PORT_2424_TCP_ADDR_:_ORIENTDB_PORT_2424_TCP_PORT_/test</graph-location>
+            <extensions>
+                <allows>
+                    <allow>tp:gremlin</allow>
+                </allows>
+            </extensions>
+            <properties>
+              <username>admin</username>
+              <password>admin</password>
+            </properties>
+        </graph>
+        <graph>
+            <graph-enabled>true</graph-enabled>
+            <graph-name>development</graph-name>
+            <graph-type>com.tinkerpop.rexster.OrientGraphConfiguration</graph-type>
+            <graph-location>remote:_ORIENTDB_PORT_2424_TCP_ADDR_:_ORIENTDB_PORT_2424_TCP_PORT_/development</graph-location>
             <extensions>
                 <allows>
                     <allow>tp:gremlin</allow>
